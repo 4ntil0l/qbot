@@ -1,0 +1,392 @@
+en:
+  no_perms: '.اجازه لازم جهت انجام این عملیات را ندارید'
+  #You do not have the required permissions to perform this action.
+  
+  descriptions:
+    help: 'لیست همه دستورات قابل استفاد را نشان میدهد یا صفحه کمک برای یک دستور را'
+    #Shows a list of all available commands or displays help for a specific command
+    
+    config: 'ایجاد و تغییر گزینه های بات'
+    #Sets various configuration options for the bot
+    
+    userconfig: 'تغییر تنظیمات کاربر که شامل تمام سرور ها میشود'
+    #Configure user settings that apply across servers
+    
+    listsnippets: ' تمام نمونه کد هارا نمایش میدهد'
+    #Lists available snippets
+    snippet: 'کد نمونه را میفرستد'
+    #Posts a snippet
+
+    color: 'رنگ کاربر شمارا قرار میدهد'
+    #Sets your user color role
+    closestcolor: 'نزدیک ترین رنگ مورد نظر را در فورمت هکس کود (hex code) میدهد'
+    #Gives you the closest color, by hex code
+    listcolors: 'رنگ های قابل دسترس که در سرور وجود دارد را نماشی میدهد'
+    #Lists colors available on the server
+    createcolorroles: 'رول با رنگ مورد نظر را ایجاد میکند'
+    #Creates color roles
+    randcolors: 'رنگ کاربران را به صورت شانسی انتخاب میکند'
+    #Randomizes colors for all users
+
+    query: 'یک درخواست به لیست درخواست ها اضافه میکند'
+    #Adds a query to the list of queries
+    openqueries: 'درخواست های باز را نشان میهد'
+    #Lists open queries
+    closequery: 'درخواست را با استفاده از ای دی-اش میبندد'
+    #Closes a query by ID
+
+    join: 'به کانال صوتی اضاقه میشود'
+    #Joins the voice channel
+    play: 'اهنگی را از لینک داده شده پخش میکند'
+    #Plays music from a URL
+    yt: 'از یوتیوب یک ویدیٔو جستجو میکند و پخش میکند'
+    #Searches YouTube for a video to play
+    pause: 'صدا را متوقف میکند'
+    #Pauses the audio
+    resume: 'صدا را ادامه میدهد'
+    #Resumed paused audio
+    stop: 'پخش را متوقف میکند'
+    #Stops playback
+    skip: 'پخش فعلی را عوض میکند'
+    #Skips the current track
+    volume: 'صدای خروجی بات را در سرور فعلی تنظیم میکند'
+    #Sets the bot volume for this server
+    seek: 'چند لحظه جلو میرود'
+    #Skips forward a few seconds
+    np: 'پخش فعلی را نمایش میدهد'
+    #Shows the currently playing track
+
+    eval: 'اجرای کد. فقط برای صاحب'
+    #Evaluates some code. Owner-only.
+    modules: 'مدول هایی که درحال اجرا هستند را نمیایش میدهد'
+    #Shows a list of currently loaded modules
+
+    echo: 'متن داده شده را میفرستد'
+    #Echoes a string
+    botrepo: 'لینک بات را میفرستد'
+    #Posts the URL of the bot's Git repo
+    avatar: 'پروفایل کاربر را میفرستد'
+    #Posts the URL of a user's avatar
+
+    archwiki: 'دانش نامه "Arch Linux" را نمایش میدهد'
+    #Searches the Arch wiki
+    packagesearch: 'یک برنامه را در خزانه برنامه های "Arch Linux" جستجو میکند'
+    #Searches for a package in the Arch repositories
+    package: 'اطلاعاتی در مورد برنامه درخواست شده میدهد'
+    #Shows info for a given package
+
+    blacklist: 'نمایش میدهد ورودی های ممنوع برای کانال هارا'
+    #Lists blacklist entries for a channel
+
+    xkcd: 'یک کتاب کاریکاتور از "XKCD" را با نام یا ای دی-اش جستجو و نمایش میدهد'
+    #Gets an XKCD comic by ID or name
+
+  admin:
+    eval:
+      nope: 'نوچ'
+      #nope
+    modules:
+      title: 'مدول های درحال اجرا'
+      #Loaded modules
+      global: 'گلوبال'
+      #Global
+      local: 'لوکال'
+      #Local
+
+  arch:
+    wiki:
+      no-results: 'نتیجه ای یافت نشد'
+      #No results found
+    ps:
+      no-results: 'نتیجه ای یافت نشد'
+      #No results found
+      title: 'نتایج %s'
+      #Search results for %s
+      version: 'نسخه'
+      #version
+      last-update: 'اخرین بروزرسانی'
+      #last update
+      link: 'لینک سایت'
+      #web link
+
+  blacklist:
+    bl:
+      title: ورودی های ممنوع شده
+      #Blacklist entries
+    message: >-
+      پیام شما متن ممنوع شده داشته است `%s`
+      #Your message contained text blocked by the blacklist entry `%s`.
+
+      جهت مرور پیام شما در پایین ذکر شده است
+      #For your convenience, the original message is included below.
+      
+      ```
+      %s
+      ```
+
+  colors:
+    assign-role:
+      already-have: ''
+      #You already have that %s.
+      success: ''
+      #Your %s is now **%s**.
+    color:
+      not-found: ''
+      #Color not found.
+      role-type-name: ''
+      #color
+    closest:
+      found: ''
+      #Closest color found: `%s`.
+    list:
+      title: ''
+      #All colors
+    ccr:
+      deleting: ''
+      #Deleting existing color role `%s`.
+      created: ''
+      #Created role `%s` with color `%s`.
+      success: ''
+      #Created %s roles.
+    rc:
+      success: ''
+      #Randomized colors for %s users.
+
+  figlet:
+
+  help:
+    aliases: ''
+    #Aliases
+    usage: ''
+    #Usage
+    valid-params: ''
+    #Accepted parameters
+    list-title: ''
+    #List of commands
+    not-found: ""
+    #The command `%s` does not exist.
+
+  music:
+    join:
+      success: ''
+      #Successfully joined the channel %s!
+      not-in-voice: ''
+      #You are not in a voice channel!
+    play:
+      downloading: ''
+      #Downloading...
+      success: ''
+      #Added **%s** to the queue.
+    yt:
+      results-title: ''
+      #Search results for %s
+      ping-with-number: ''
+      #To choose a result, ping the bot with its number.
+    np:
+      title: ''
+      #Now playing
+      nothing: ''
+      #Nothing
+
+  queries:
+    query:
+      success: ''
+      #Query #%s has been created.
+    oq:
+      title: ''
+      #Open queries
+      no-results: ''
+      #No results
+      deleted-after-30d: ''
+      Queries are deleted after 30 days.
+      entry-name: ''
+      ##%s by %s at %s
+    cq:
+      not-found: ''
+      #Query #%s not found.
+      success: ''
+      #Deleted query #%s.
+      no-perms: ''
+      #You do not have permission to delete query #%s.
+
+  roles:
+
+  snippets:
+    list:
+      none-found: ''
+      #No available snippets.
+      title: ''
+      #Available snippets
+    snippet:
+      not-found: ''
+      #Snippet not found.
+
+  xkcd:
+
+  uc:
+    help:
+      help: ''
+      #show this message
+      language: ''
+      #set the language the bot responds with
+
+    language:
+      help:
+        list: ''
+        #show available languages
+        set: ''
+        #change your user language
+        reset: ''
+        #set your user language to the default (English)
+
+      list:
+        title: ''
+        #Available languages
+
+      set:
+        not-found: ''
+        #Language `%s` not found.
+        success: ''
+        #Your language is now `%s`.
+
+      reset:
+        success: ''
+        #Language successfully reset to `%s`.
+
+  cfg:
+    usage: ''
+    #Usage:
+    subcmd: ''
+    #subcommand
+    options: ''
+    #options
+    avail_subcmd: ''
+    #Available subcommands:
+
+    help:
+      help: ''
+      #show this message
+      log-channel: ''
+      #log bot events to a specific channel
+      modules: ''
+      #enable or disable modules
+      prefix: ''
+      #set the command prefix for this server
+      extra-color-role: ''
+      #configure extra color roles
+      snippet: ''
+      #add, remove, or modify snippets for this server
+      rolegroup: ''
+      #manage groups of self-assignable roles
+      reaction: ''
+      #configure reaction actions
+      blacklist: ''
+      #manage blacklist entries
+
+    log-channel:
+      help:
+        set: ''
+        #set the log channel ID for this server
+        reset: ''
+        #disable logging commands to a channel
+
+      set:
+        success: ""
+        #The log channel is now <#%s>.
+      reset:
+        success: ""
+        #The log channel has been disabled.
+
+    modules:
+
+    prefix:
+      help:
+        set: ''
+        #set the prefix for this server
+        reset: ''
+        #reset the prefix to the default
+
+      saved: ''
+      #New prefix `%s` saved.
+
+    extra-color-role:
+      help:
+        list: ''
+        #print the list of extra color roles
+        add: ''
+        #add a role (by ID) to the list of extra roles
+        remove: ''
+        #remove a role (by ID) from the list of extra roles
+
+      list:
+        no-roles: ''
+        #No extra color roles configured yet.
+      add:
+        not-found: ''
+        #Role not found.
+        non-unique: ''
+        #That role is already in the list.
+        success: ''
+        #Role `%s` (`%s`) added to the list of extra color roles.
+      remove:
+        success: ''
+        #Role `%s` removed from the list of extra color roles, if it was present.
+
+    snippet:
+      add:
+        non-unique: ''
+        #Snippet `%s` already exists.
+        success: ''
+        #Created snippet `%s`.
+      edit:
+        not-found: ''
+        #Snippet `%s` not found.
+        success: ''
+        #Snippet `%s` edited successfully.
+      remove:
+        success: ''
+        #Removed snippet `%s`, if it was present.
+      prop:
+        help:
+          embed: ''
+          #(bool) is snippet sent as an embed or a normal message?
+
+        success: ''
+        #Property `%s` of snippet `%s` is now `%s`.
+
+    rolegroup:
+
+    reaction:
+
+    blacklist:
+      "[channel]":
+        help:
+          add: ''
+          #add an entry to the blacklist for this channel
+          remove: ''
+          #remove an entry from the blacklist by its ID
+          list: ''
+          #show all blacklist entries and their IDs
+          clear: ''
+          #remove all blacklist entries for this channel
+
+      add:
+        success: ''
+        #Entry was successfully added with ID `%s`.
+
+      remove:
+        not-found: ''
+        #Cannot find entry `%s`.
+        wrong-server: ''
+        #Cannot find entry `%s` on this server.
+        
+        success: ''
+        #Removed entry with ID `%s`.
+
+      list:
+        title: 'Blacklist entries'
+
+      clear:
+        success: '%s blacklist entries removed.'
+
+    nyi: 'Not yet implemented.'
